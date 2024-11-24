@@ -1,0 +1,22 @@
+repos:
+  - repo: https://github.com/python/black.git
+    rev: latest
+    hooks:
+      - id: black
+        stages:
+          - commit
+        language_version: python3
+  - repo: https://github.com/PyCQA/isort
+    rev: latest
+    hooks:
+      - id: isort
+        stages:
+          - commit
+        language_version: python3
+  - repo: https://github.com/PyCQA/flake8.git
+    rev: latest
+    hooks:
+      - id: flake8
+        stages:
+          - commit
+        language_version: python3
